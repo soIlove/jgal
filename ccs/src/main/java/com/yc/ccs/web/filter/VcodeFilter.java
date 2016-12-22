@@ -30,6 +30,7 @@ public class VcodeFilter extends AbstractFilter{
 		String inputCode = request.getParameter("vcode");
 		if(srcCode.intern() == inputCode.intern()){
 			System.out.println("这是在进行验证码校验...");
+			System.out.println("这是刘阳留下的痕迹");
 			LogManager.getLogger().debug("过滤器VcodeFilter验证验证码通过.....");
 			System.out.println("验证码验证成功！！！");
 			chain.doFilter(request, response);
